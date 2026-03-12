@@ -17,7 +17,16 @@ The analysis focuses on three main areas:
 - Revenue performance
 - Customer value analysis
 - Product category performance
-
+- 
+SELECT 
+    o.customer_id,
+    COUNT(DISTINCT o.order_id) AS order_count,
+    SUM(oi.price) AS total_revenue
+FROM olist_orders_dataset o
+JOIN olist_order_items_dataset oi
+ON o.order_id = oi.order_id
+WHERE o.order_status = 'delivered'
+GROUP BY o.customer_id;
 ---
 
 # Business Questions
