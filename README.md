@@ -1,6 +1,6 @@
 # E-commerce Data Analysis using SQL
 
-Author: Harvey Li  
+Author: Dvaid Li  
 Tools: SQL (MySQL)  
 Project Type: Data Analysis Project  
 
